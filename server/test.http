@@ -1,0 +1,40 @@
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo0LCJpYXQiOjE2NzMxOTIxNDksImV4cCI6MTY3MzM2NDk0OX0.3X7fB7uNA7XQ9PntFDC0goHk6YR3djBInnagm_pdc0s
+###
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "username": "furkan",
+    "password": "123456"
+    
+}
+
+###
+GET http://[::1]:3001/mytodos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+POST http://[::1]:3001/mytodos/create
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "todoName": "19. yeni todo"
+}
+
+###
+PUT http://localhost:3001/todos/update/12
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "todoName": "7. yeni todo",
+    "todoTag": "spor",
+    "todoFilePath":"asdasdasd"
+}
+
+###
+DELETE http://localhost:3001/todos/delete/14
+Content-Type: application/json
+Authorization: Bearer {{token}}
