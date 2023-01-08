@@ -32,4 +32,7 @@ npm install --save
 npm start
 
 # Test için user bilgileri
-Seed'lerde kullanıcı adı furkan, emre ve mahmut olan 3 kullanıcı oluşturuluyor. Hepsinin şifresi 123456.
+
+Seed'lerde kullanıcı adı furkan, emre ve mahmut olan 3 kullanıcı oluşturuluyor. Hepsinin şifresi 123456
+
+Client side ayağa kaldırıldıktan sonra http://localhost:3000/login url'ini tarayıcıda açıp projeyi test edebilirsiniz.
